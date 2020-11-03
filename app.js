@@ -33,7 +33,8 @@ app.use(
   })
 );
 
-mongoose.connect("mongodb://127.0.0.1/node13db");
+// mongoose.connect("mongodb://127.0.0.1/node13db");
+mongoose.connect("mongodb+srv://hsumyat:hsumyat12345@node13.pezzr.mongodb.net/node13?retryWrites=true&w=majority")
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error from node 13!!!"));
 
