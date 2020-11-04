@@ -84,37 +84,3 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Sign In</h1>
-    <form action="/signin" method="POST">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"><p></p>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"><p></p>
-        <input type="checkbox" id="rememberMe">Remeber Me<p></p>
-        <input type="submit" value="Signin">
-    </form>
-</body>
-<script src="/javascripts/jquery-3.5.1.min.js"></script>
-<script src="/javascripts/js.cookie.min.js"></script>
-<script>
-    $("#rememberMe").click(function () {
-        if ($("#rememberMe").prop("checked") == true) {
-           Cookies.set("email", $("#email").val(), {expires: 7}); 
-        }else{
-            Cookies.remove("email");
-        }
-    });
-    if (Cookies.get("email")) {
-        $("#email").val(Cookies.get("email"));
-        $("#rememberMe").prop("checked", true)
-    }
-</script>
-</html> -->
